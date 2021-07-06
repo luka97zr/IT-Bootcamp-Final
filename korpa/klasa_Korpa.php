@@ -47,6 +47,15 @@ class Korpa{
         }
         $_SESSION['stavke_korpe'] = $this->stavke_korpe;
     }
+    function ukupno(){
+        $s =0;
+        for($i=0; $i<count($this->stavke_korpe); $i++){
+            $u = $this->stavke_korpe[$i]['cena'] * $this->stavke_korpe[$i]['kolicina'];
+            $s += $u;
+        }
+            return $s;
+    }
+    
     function prikazi(){
         if(($_SESSION['stavke_korpe'])!= []){ ?>
            <div class='cart_wrapper'>
@@ -81,7 +90,7 @@ class Korpa{
            <tr><td colspan="3" style="text-align:right">SUMMARY:</td><td><?=$s?>.00$</td></tr>
            </table>
            <a href="../shop.php#shop">Back to Shop</a>
-           <a href="">Proceed to Checkout</a>
+           <a href="snimi_korpu.php">Proceed to Checkout</a>
            </div>
       <?php  }else{ ?>
             <div class="cart_wrapper--alert">

@@ -24,7 +24,7 @@
                         <li class=header_nav--drop>
                             <span>Sign</span>
                             <ul class=header_nav--dropmenu>
-                                <li><a href="login/login_forma.php">SIGN UP</a></li>
+                                <li><a href="login/register_forma.php">SIGN UP</a></li>
                                 <li><a href="login/login_forma.php">SIGN IN</a></li>
                             </ul>
                         </li>

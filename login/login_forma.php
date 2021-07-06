@@ -15,7 +15,7 @@
             <input type="password" name="password" placeholder="password">
             <input type="checkbox" name="remember_me">Check if you want to stay logged in <br>
             <a href="#" onclick="this.parentNode.submit();"> Log In</a>
-            <a href="#"> Register</a><br>
+            <a href="register_forma.php"> Register</a><br>
             <a href="../index.php">Back to Main</a>
 
         </form>

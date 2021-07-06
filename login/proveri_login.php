@@ -15,6 +15,7 @@ session_start();
         <?php
         $username = $_GET['username'];
         $password = $_GET['password'];
+        if(isset($_GET['remember_me']))
         $remember_me= $_GET['remember_me'];
         
         

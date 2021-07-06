@@ -8,15 +8,15 @@
     <title>Document</title>
 </head>
 <body>
-<div class='register_wrapper'>
-    <div class="register_form">
-        <form action="register.php">
+<div class='login_wrapper'>
+    <div class="login_form">
+        <form action="register.php" >
             <input type="text" name="name" placeholder="name">
             <input type="email" name="email" placeholder="e-mail">
             <input type="text" name="username" placeholder="username">
             <input type="password" name="password" placeholder="password">
             <a href="#" onclick="this.parentNode.submit();"> Submit</a>
-            <a href="login_forma.php">Back to Login</a>
+            <a href="login_forma.php">Login</a>
 
         </form>
     </div>
