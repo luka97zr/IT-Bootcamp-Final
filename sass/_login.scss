@@ -1,0 +1,103 @@
+.login_wrapper{
+    background: url('../images/loginform1.jpg') no-repeat center / cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.login_alert{
+    font-size: 4rem;
+    letter-spacing: 5px;
+    line-height: 1.5em;
+    &:first-of-type{
+        margin-top: 3em;
+    }
+    &--btn{
+        margin-top: 1em;
+        font-size: 2.5rem;
+        font-weight: bold;
+        padding: .3em 1em;
+        letter-spacing: 2px;
+        transition: all .3s;
+        &:hover{
+                background-color:$color-white;
+                color: $color-yellow;
+                border-radius: 10px;
+                box-shadow: 0 1rem 2rem rgba(0, 0, 0,.4);
+        }
+    }
+}
+
+.login_form{
+    // background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),url('../images/Coffee beans sketch illustrations set.jpg')no-repeat center / cover;
+    border-radius: 8px;
+    width: 30%;
+    height: 80%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+        & input[type=checkbox]{
+            vertical-align: middle;
+        }
+        & input[type=text],input[type=password]{
+            font-weight: bold;
+            display: block;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            margin-bottom: 1em;
+            border-radius: 5px;
+        }
+        & a{
+            text-align: center;
+            width: 40%;
+            display: inline-block;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin: 1em 0 0 1.5rem;
+            padding: .5em;
+            font-size: 1.6rem;
+            font-weight: bold;
+            transition: all .3s;
+            &:nth-of-type(3){
+                margin-left: 1.5em;
+                width: 80%;
+            }
+            &:hover{
+                background-color:$color-white;
+                color: $color-yellow;
+                box-shadow: 0 1rem 2rem rgba(0, 0, 0,.4);
+            }
+        }
+}
+.login_check{
+    background:url('../images/loginform1.jpg') no-repeat center / cover; 
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.wrong_pass--login{
+    & h1{
+        font-size: 2.8rem;
+        margin-bottom: 1em;
+    }
+    & a{
+        font-size: 2rem;
+        font-weight: bold;
+        letter-spacing: 2px;
+        padding: .5em;
+        transition: all .3s;
+
+        &:hover{
+            background-color:$color-white;
+            color: $color-yellow;
+            border-radius: 5px;
+            box-shadow: 0 1rem 2rem rgba(0, 0, 0,.4);
+        }
+    }
+}
