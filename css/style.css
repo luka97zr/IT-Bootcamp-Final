@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 .shop_wrapper {
-  background-color: rgba(197, 196, 196, 0.527); }
+  background-color: rgba(197, 196, 196, 0.8); }
 
 .shop_products {
   text-align: center;
@@ -74,7 +74,7 @@
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15); }
   .shop_wrapper--detail {
     background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../images/Coffee beans sketch illustrations set.jpg") repeat center/contain;
-    background-color: rgba(197, 196, 196, 0.527);
+    background-color: rgba(197, 196, 196, 0.8);
     width: 95vw;
     height: 95vh;
     margin: 2.5vh auto;
@@ -251,6 +251,68 @@
     border-radius: 5px;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4); }
 
+.cart_wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 5px; }
+  .cart_wrapper table {
+    font-size: 1.7rem; }
+    .cart_wrapper table tr th {
+      padding: .7em; }
+    .cart_wrapper table tr td {
+      border-right: 1px solid black;
+      padding: .4em;
+      color: #23b923; }
+      .cart_wrapper table tr td:nth-child(3), .cart_wrapper table tr td:nth-child(4) {
+        text-align: center; }
+      .cart_wrapper table tr td a {
+        color: black;
+        font-size: 2.3rem;
+        font-weight: bold;
+        transition: all .2s;
+        border-radius: 50%;
+        padding: .4em; }
+        .cart_wrapper table tr td a:nth-child(1):hover {
+          background-color: white;
+          color: #23b923;
+          box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.4); }
+        .cart_wrapper table tr td a.red:hover {
+          background-color: white;
+          color: #c42626;
+          box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.4); }
+  .cart_wrapper > a {
+    text-align: center;
+    width: 30%;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 1em 0 0 .5em;
+    color: black;
+    padding: .5em;
+    font-size: 1.6rem;
+    font-weight: bold;
+    transition: all .3s; }
+    .cart_wrapper > a:hover {
+      background-color: white;
+      color: #ffbe00;
+      box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.4); }
+
+.cart_wrapper--alert {
+  text-align: center;
+  font-size: 3rem; }
+  .cart_wrapper--alert a {
+    display: inline-block;
+    margin-top: .6em;
+    transition: all .3s; }
+    .cart_wrapper--alert a:hover {
+      background-color: white;
+      color: #ffbe00;
+      box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.4);
+      border-radius: 5px; }
+
 *,
 *::after,
 *::before {
@@ -358,7 +420,7 @@ ul.my_profile--dropmenu {
     font-size: 1.7rem; }
 
 .coffee_type {
-  background-color: rgba(197, 196, 196, 0.527);
+  background-color: rgba(197, 196, 196, 0.8);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -461,7 +523,7 @@ ul.my_profile--dropmenu {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
   grid-auto-flow: dense;
-  background-color: rgba(197, 196, 196, 0.527); }
+  background-color: rgba(197, 196, 196, 0.8); }
   .quotes_content {
     display: flex;
     flex-direction: column;
@@ -525,7 +587,13 @@ ul.my_profile--dropmenu {
     border-radius: 5px;
     color: black;
     font-size: 1.6rem;
-    font-weight: bold; }
+    font-weight: bold;
+    background-color: transparent;
+    margin-bottom: 1em;
+    border: 0.5px solid white;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.6rem; }
     .form form input:first-child {
       margin-top: 1em; }
     .form form input::placeholder {
