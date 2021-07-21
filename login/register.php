@@ -1,14 +1,40 @@
 <?php
-include "../baza/Baza.php";
+
+if(isset($_POST['submit'])){
+    
+    $name=$_POST['name'];
+    $username=$_POST['username'];
+    $email=$_POST['email'];
+    $pass=$_POST['pass'];
+    $passRepeat=$_POST['passrepeat'];
 
 
-$name = $_GET['name'];
-$email = $_GET['email'];
-$user = $_GET['username'];
-$pass = $_GET['password'];
+    require_once 'dbh.inc.php';
+    require_once 'functions.inc.php';
 
-if((!isset($_GET['name']) || !isset($_GET['email']) || !isset($_GET['username']) || !isset($_GET['password'])))
-    echo "<p>Please fill in all fields</p>";
+    if(emptyInputSignup( $name,$username,$email,$pass, $passRepeat) !== false){
+
+        header("Location:  register_form.php?error=emptyInput" );
+        exit();
+    }
+    if(invalidUsser($username) !== false){
+        header("Location:  register_form.php?error=invalidusername" );
+        exit();
+    }
+    if(invalidEmail($email) !== false){
+        header("Location:  register_form.php?error=invalidemail" );
+        exit();
+    }
+    if(passMatch($pass,$passRepeat) !== false){
+        header("Location:  register_form.php?error=passwordmatch" );
+        exit();
+    }
+    if(userExists($conn,$username,$email) !== false){
+        header("Location:  register_form.php?error=usernametaken" );
+        exit();
+    }
+
+    createUser($conn,$name,$email,$username,$pass);
+}
 else
-$b -> registruj($name,$email,$user,$pass);
-?>
+   header("Location: register_form.php");

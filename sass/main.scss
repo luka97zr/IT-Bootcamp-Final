@@ -34,7 +34,7 @@ $margin-bottom-small:1.5em;
     margin: 0;
     box-sizing: border-box;
 }
-h1, h3, h2, h4{
+h1, h3, h2, h4, a,input[type=submit]{
     font-family: "Fraunces", sans-serif;
     font-weight: 900;
 }
@@ -44,6 +44,7 @@ html{
 body p{
     font-family: "Barlow", sans-serif;
 }
+
 a{
     color: $color-white;
     text-decoration: none;
@@ -97,7 +98,7 @@ html{
             & li:hover,a:hover{
                     color: darken($color-white,25%);
                 }
-            &>li>a:hover{
+            &>li>a:hover:not(#img){
                 border-bottom: 1px solid $color-white;
                 padding-bottom: .3em;
             }
@@ -123,9 +124,9 @@ html{
             }
         }
         &--dropmenu{
-            font-family: 'Monserat','sans-serif';
+            font-family: "Barlow", sans-serif;
             font-weight: bold;
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             list-style-type: none;
             display: none;
             position: absolute;

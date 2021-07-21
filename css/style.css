@@ -192,6 +192,7 @@
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4); }
 
 .login_form {
+  background-color: white;
   border-radius: 8px;
   width: 30%;
   height: 80%;
@@ -209,6 +210,7 @@
     margin-bottom: 1em;
     border-radius: 5px; }
   .login_form a {
+    background: linear-gradient(to right, #8e0e00, #1f1c18);
     text-align: center;
     width: 40%;
     display: inline-block;
@@ -216,7 +218,7 @@
     border-radius: 5px;
     margin: 1em 0 0 1.5rem;
     padding: .5em;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: bold;
     transition: all .3s; }
     .login_form a:nth-of-type(3) {
@@ -226,6 +228,31 @@
       background-color: white;
       color: #ffbe00;
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4); }
+  .login_form .button-submit {
+    background: linear-gradient(to right, #8e0e00, #1f1c18);
+    color: white;
+    text-align: center;
+    width: 40%;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 1em 0 0 1.5rem;
+    padding: .5em;
+    font-size: 1.4rem;
+    font-weight: bold;
+    transition: all .3s; }
+    .login_form .button-submit:hover {
+      color: #ffbe00;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4); }
+  .login_form h1 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem; }
+  .login_form p {
+    margin-bottom: 2rem;
+    font-size: 1.5rem; }
+    .login_form p:last-of-type:not(.not-style) {
+      text-align: center;
+      padding: .8em; }
 
 .login_check {
   background: url("../images/loginform1.jpg") no-repeat center/cover;
@@ -285,7 +312,7 @@
           box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.4); }
   .cart_wrapper > a {
     text-align: center;
-    width: 30%;
+    width: 32%;
     display: inline-block;
     border: 1px solid black;
     border-radius: 5px;
@@ -320,7 +347,7 @@
   margin: 0;
   box-sizing: border-box; }
 
-h1, h3, h2, h4 {
+h1, h3, h2, h4, a, input[type=submit] {
   font-family: "Fraunces", sans-serif;
   font-weight: 900; }
 
@@ -374,7 +401,7 @@ html {
     align-items: center; }
     .header_nav--menu li:hover, .header_nav--menu a:hover {
       color: #bfbfbf; }
-    .header_nav--menu > li > a:hover {
+    .header_nav--menu > li > a:hover:not(#img) {
       border-bottom: 1px solid white;
       padding-bottom: .3em; }
     .header_nav--menu > li {
@@ -392,9 +419,9 @@ html {
       .header_nav--drop:hover ul {
         display: block; }
     .header_nav--dropmenu {
-      font-family: 'Monserat','sans-serif';
+      font-family: "Barlow", sans-serif;
       font-weight: bold;
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       list-style-type: none;
       display: none;
       position: absolute;

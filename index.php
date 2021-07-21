@@ -25,13 +25,13 @@ session_start();
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, adipisci.</p>    
             </div>   
             <div class="coffee_type--block2">
-                <img src="images/cappuccino.png" alt="cappucino" data-aos="zoom-in">   
-                <h3>Cappucino</h3>
+                <img src="images/cappuccino.png" alt="cappuccino" data-aos="zoom-in">   
+                <h3>Cappuccino</h3>
                 <p>Lorem ipsum dolor sit amet cons.Lorem ipsum dolor sit amet cons</p> 
             </div>  
             <div class="coffee_type--block3">
-                <img src="images/late.png" alt="late" data-aos="zoom-in"> 
-                <h3>Late</h3>  
+                <img src="images/late.png" alt="latte" data-aos="zoom-in"> 
+                <h3>Latte</h3>  
                 <p>Lorem ipsum dolor sit amet cons.Lorem ipsum dolor sit amet cons</p>
             </div>
         </div>

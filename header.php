@@ -18,13 +18,13 @@
                     <?=$f?>
                     <li><a href="<?=$b?>.php#shop"><?=$a?></a></li>
                     <li><a href="<?=$c?>.php#footer" class="btn-contact"><?=$d?></a></li>
-                    <li><a href="korpa/korpa.php"><img src="images/cart.png"></a></li>
+                    <li><a id="img" href="korpa/korpa.php"><img src="images/cart.png"></a></li>
                     <?php
                         if(!isset($_SESSION['login_id'])){?>
                         <li class=header_nav--drop>
                             <span>Sign</span>
                             <ul class=header_nav--dropmenu>
-                                <li><a href="login/register_forma.php">SIGN UP</a></li>
+                                <li><a href="login/register_form.php">SIGN UP</a></li>
                                 <li><a href="login/login_forma.php">SIGN IN</a></li>
                             </ul>
                         </li>

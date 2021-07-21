@@ -50,10 +50,6 @@ class Projekat{
         $this->izvrsi_upit("INSERT INTO `stavke_korpe`( `barkod`, `id_korpe`, `kolicina`, `cena`) VALUES 
         ('$id_proizvoda',$id_korpe,$kolicina,$cena)");
     }
-    function registruj($name,$email,$user,$pass){
-        $this->izvrsi_upit("INSERT INTO `users`(`ime_prezime`, `e-mail`, `username`, `password`) VALUES 
-        ( '$name','$email','$user','$pass')");
-    }
     
 }
 $b = new Projekat('projekat');

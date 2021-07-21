@@ -10,14 +10,26 @@
 <body>
 <div class='login_wrapper'>
     <div class="login_form">
-        <form action="proveri_login.php">
-            <input type="text" name="username" placeholder="username">
+        <form action="login_check.php" method="post">
+            <h1>Please Log In</h1>
+            <p class='not-style'>Fill in form with correct values</p>
+            <input type="text" name="username" placeholder="username/email">
             <input type="password" name="password" placeholder="password">
-            <input type="checkbox" name="remember_me">Check if you want to stay logged in <br>
-            <a href="#" onclick="this.parentNode.submit();"> Log In</a>
-            <a href="register_forma.php"> Register</a><br>
+            <!-- <input type="checkbox" name="remember_me">Check if you want to stay logged in <br> -->
+            <input type="submit" value="Log in" id="register" name="submit"class="button-submit">
+            <a href="register_form.php"> Register</a><br>
             <a href="../index.php">Back to Main</a>
 
+        <?php
+        if(isset($_GET['error'])){
+            if($_GET['error'] == "emptyinput")
+                 echo "<p>Fill in all fields!</p>";
+            elseif($_GET['error'] == "wronglogin")
+                echo "<p>Incorrect login information!</p>";
+            elseif($_GET['error'] == "wrongpwd")
+                echo "<p>Incorrect password!</p>";
+        }
+        ?>
         </form>
     </div>
 
